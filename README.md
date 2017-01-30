@@ -13,5 +13,5 @@
 
 ## DO NOW - Step 3
 1. Use Postman to send a POST request to the following URL: http://scripted-forms-mdepuy939679.codeanyapp.com/process-form.php
-    1. Add a parameter called 'foo' with a value of 'bar'
+    1. Inside the 'Body' tab in Postman, add a form parameter called 'foo' with a value of 'bar'
 	1. __Did you get a 200 status code?  *If not, you have a bug in your request!*__
