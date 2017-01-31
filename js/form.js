@@ -18,7 +18,7 @@ $("document").ready(function() {
         // Get the status from the validate function
         var isValid = validate(form);
         if(!isValid) {
-            /* 
+            /** 
              * Step 2: Use the showModal function to display the results returned from the server
              */
              console.log('You must fill in all fields to submit the form');
@@ -31,7 +31,7 @@ $("document").ready(function() {
               success: function(res) {
                 var result = $.parseJSON(res);
                 
-                /* 
+                /** 
                  * Step 3: Use the showModal function to display the results returned from the server
                  */
                 console.dir(result)
@@ -49,7 +49,7 @@ $("document").ready(function() {
         $('#exampleModal').find('.modal-title').text(status);
         $('#exampleModal').find('.modal-body .modal-message').text(message);
         
-        /*
+        /**
          * Step 4 (Extra Credit):
          * Use the bootstrap 'Alerts' feature instead of a modal
          * Documentation: http://getbootstrap.com/javascript/#alerts-examples
