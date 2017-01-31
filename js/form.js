@@ -45,6 +45,7 @@ $("document").ready(function() {
      * This function pops up a modal
      */
     var showModal = function(status, message) {
+        // Step 1: add a debug statement here
         $('#exampleModal').modal('show');
         $('#exampleModal').find('.modal-title').text(status);
         $('#exampleModal').find('.modal-body .modal-message').text(message);
@@ -63,6 +64,10 @@ $("document").ready(function() {
         var data = contact_form.serialize();
         
         processForm(contact_form, url, data);
+        // Step 2: add a debug statement here
+        
+        // Step 3: Open the page in Chrome with the console open
+        // Step 4: Submit the form and "step through" the debugger
         
         return false;
     });
