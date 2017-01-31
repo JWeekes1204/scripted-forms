@@ -60,7 +60,7 @@ $("document").ready(function() {
     $("button#submitForm").click(function(event) {
         var contact_form = $("form.form-contact");
         var url = "https://scripted-forms-mdepuy.c9users.io/process-contact-form.php";
-        var data = $(this).serialize();
+        var data = contact_form.serialize();
         
         processForm(contact_form, url, data);
         
