@@ -9,7 +9,7 @@ $resp = [
 ];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  if(isset($_POST['first_name']) || isset($_POST['phone_number'])) {
+  if(!empty($_POST['first_name']) || !empty($_POST['phone_number'])) {
     $resp['status'] = "ok";
     $resp['message'] = "Great job!  Post was successful!";
   }
