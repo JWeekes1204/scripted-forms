@@ -6,10 +6,17 @@ $("document").ready(function() {
      * 
      * returns true if both fields have a value
      * returns false if the First Name OR Phone Number is empty
-     */
+     *if .val is equal to an empty stirng
+    */
     var validate = function(form) {
-        return true;
-    };
+        if ($("#firstName").val() && $('#phoneNumber').val()){
+           return true;
+           }
+     
+        else if ($("#firstName").val() || $('#phoneNumber').val() == ""){
+        return false; 
+    
+   } };
     
     /**
      * Perform JavaScript validation before submitting the request to the server
